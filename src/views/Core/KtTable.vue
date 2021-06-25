@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!--表格栏-->
+    <!--表格栏--> 
     <el-table :data="data.content" :highlight-current-row="highlightCurrentRow" @selection-change="selectionChange" 
           @current-change="handleCurrentChange" v-loading="loading" :element-loading-text="$t('action.loading')" :border="border" :stripe="stripe"
           :show-overflow-tooltip="showOverflowTooltip" :max-height="maxHeight" :height="height" :size="size" :align="align" style="width:100%;" >
@@ -33,7 +33,7 @@ import KtButton from "@/views/Core/KtButton"
 export default {
   name: 'KtTable',
   components:{
-			KtButton
+	KtButton 
 	},
   props: {
     columns: Array, // 表格列配置
